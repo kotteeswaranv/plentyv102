@@ -1,206 +1,286 @@
-[
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "payment_active",
-        "label"  : "Enable payment method",
-        "type"   : "checkbox",
-        "default": false
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "test_mode",
-        "label"  : "Enable test mode",
-        "type"   : "checkbox",
-        "default": false
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "vendor_id",
-        "label"  : "Merchant ID*",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "auth_code",
-        "label"  : "Authentication code*",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "product_id",
-        "label"  : "Project ID*",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "tariff_id",
-        "label"  : "Tariff ID*",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "access_key",
-        "label"  : "Payment access key*",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "payment_name",
-        "label"  : "Payment name",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "description",
-        "label"  : "Payment description",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "on_hold",
-        "label"  : "Set a limit for on-hold transaction (in minimum unit of currency. E.g. enter 100 which is equal to 1.00)",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "order_completion_status",
-        "label"  : "Order completion status",
-        "type"   : "text",
-        "default": "7.1"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "order_cancel_status",
-        "label"  : "Cancellation order status",
-        "type"   : "text",
-        "default": "8"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "referrer_id",
-        "label"  : "Referrer ID",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "reference1",
-        "label"  : "Transaction reference 1",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Novalnet Global Configuration",
-        "key"    : "reference2",
-        "label"  : "Transaction reference 2",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Credit Card",
-        "key"    : "cc_3d",
-        "label"  : "Enable 3D secure",
-        "type"   : "checkbox",
-        "default": false
-    },
-    {
-        "tab"    : "Direct Debit SEPA",
-        "key"    : "sepa_due_date",
-        "label"  : "SEPA Payment duration (in days)",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Invoice",
-        "key"    : "invoice_due_date",
-        "label"  : "Payment due date (in days)",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Invoice",
-        "key"    : "invoice_callback_order_status",
-        "label"  : "Callback order status",
-        "type"   : "text",
-        "default": "9.5"
-    },
-    {
-        "tab"    : "Invoice",
-        "key"    : "invoice_payment_reference",
-        "label"  : "Payment Reference",
-        "type"   : "multi_select",
-        "possibleValues": {
-            "ref"     : "Novalnet Invoice Reference",
-            "tid"     : "TID",
-            "order_no": "Order No"
+{
+    "formatVersion": 1,
+    "menu": {
+        "Config.NovalnetGlobalConfigurationTab": {
+            "label": "Config.NovalnetGlobalConfigurationTab",
+            "formFields": {
+                "payment_active": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.paymentActiveLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "test_mode": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.testModeLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "vendor_id": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.vendorIdLabel",
+                    "options": {}
+                },
+                "auth_code": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.authCodeLabel",
+                    "options": {}
+                },
+                "product_id": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.productIdLabel",
+                    "options": {}
+                },
+                "tariff_id": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.tariffIdLabel",
+                    "options": {}
+                },
+                "access_key": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.accessKeyLabel",
+                    "options": {}
+                },
+                "payment_name": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.paymentNameLabel",
+                    "options": {}
+                },
+                "description": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.descriptionLabel",
+                    "options": {}
+                },
+                "on_hold": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.onHoldLabel",
+                    "options": {}
+                },
+                "order_completion_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.orderCompletionStatusLabel",
+                    "options": {
+                        "defaultValue": "7.1"
+                    }
+                },
+                "order_cancel_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.orderCancelStatusLabel",
+                    "options": {
+                        "defaultValue": "8"
+                    }
+                },
+                "referrer_id": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.referrerIdLabel",
+                    "options": {}
+                },
+                "reference1": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.reference1Label",
+                    "options": {}
+                },
+                "reference2": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.reference2Label",
+                    "options": {}
+                }
+            }
         },
-        "default": "all"
-    },
-    {
-        "tab"    : "Prepayment",
-        "key"    : "prepayment_callback_order_status",
-        "label"  : "Callback order status",
-        "type"   : "text",
-        "default": "9.5"
-    },
-    {
-        "tab"    : "Prepayment",
-        "key"    : "prepayment_payment_reference",
-        "label"  : "Payment Reference",
-        "type"   : "multi_select",
-        "possibleValues": {
-            "ref"     : "Novalnet Invoice Reference",
-            "tid"     : "TID",
-            "order_no": "Order No"
+        "Config.CreditCardTab": {
+            "label": "Config.CreditCardTab",
+            "formFields": {
+                "cc_3d": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.cc3dLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                }
+            }
         },
-        "default": "all"
-    },
-    {
-        "tab"    : "PayPal",
-        "key"    : "paypal_payment_pending_status",
-        "label"  : "Order status for the pending payment",
-        "type"   : "text",
-        "default": "3"
-    },
-    {
-        "tab"    : "Przelewy24",
-        "key"    : "przelewy_payment_pending_status",
-        "label"  : "Order status for the pending payment",
-        "type"   : "text",
-        "default": "3"
-    },
-    {
-        "tab"    : "Barzahlen",
-        "key"    : "cashpayment_due_date",
-        "label"  : "Slip expiry date (in days)",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Barzahlen",
-        "key"    : "cashpayment_callback_order_status",
-        "label"  : "Callback order status",
-        "type"   : "text",
-        "default": "9.5"
-    },
-    {
-        "tab"    : "Merchant script management",
-        "key"    : "callback_test_mode",
-        "label"  : "Deactivate IP address control (for test purpose only)",
-        "type"   : "checkbox",
-        "default": false
-    },
-    {
-        "tab"    : "Merchant script management",
-        "key"    : "enable_email",
-        "label"  : "Enable E-mail notification for callback",
-        "type"   : "checkbox",
-        "default": false
-    },
-    {
-        "tab"    : "Merchant script management",
-        "key"    : "email_to",
-        "label"  : "E-mail address (To)",
-        "type"   : "text"
-    },
-    {
-        "tab"    : "Merchant script management",
-        "key"    : "email_bcc",
-        "label"  : "E-mail address (Bcc)",
-        "type"   : "text"
+        "Config.DirectDebitSEPATab": {
+            "label": "Config.DirectDebitSEPATab",
+            "formFields": {
+                "sepa_due_date": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.sepaDueDateLabel",
+                    "options": {}
+                }
+            }
+        },
+        "Config.InvoiceTab": {
+            "label": "Config.InvoiceTab",
+            "formFields": {
+                "invoice_due_date": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.invoiceDueDateLabel",
+                    "options": {}
+                },
+                "invoice_callback_order_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.invoiceCallbackOrderStatusLabel",
+                    "options": {
+                        "defaultValue": "9.5"
+                    }
+                },
+                "invoice_payment_reference": {
+                    "type": "multiCheckBox",
+                    "required": false,
+                    "label": "Config.invoicePaymentReferenceLabel",
+                    "options": {
+                        "defaultValue": "all",
+                        "checkBoxValues": [
+                            {
+                                "value": "ref",
+                                "caption": "Config.invoicePaymentReferencePossibleValue-ref"
+                            },
+                            {
+                                "value": "tid",
+                                "caption": "Config.invoicePaymentReferencePossibleValue-tid"
+                            },
+                            {
+                                "value": "order_no",
+                                "caption": "Config.invoicePaymentReferencePossibleValue-order_no"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Config.PrepaymentTab": {
+            "label": "Config.PrepaymentTab",
+            "formFields": {
+                "prepayment_callback_order_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.prepaymentCallbackOrderStatusLabel",
+                    "options": {
+                        "defaultValue": "9.5"
+                    }
+                },
+                "prepayment_payment_reference": {
+                    "type": "multiCheckBox",
+                    "required": false,
+                    "label": "Config.prepaymentPaymentReferenceLabel",
+                    "options": {
+                        "defaultValue": "all",
+                        "checkBoxValues": [
+                            {
+                                "value": "ref",
+                                "caption": "Config.prepaymentPaymentReferencePossibleValue-ref"
+                            },
+                            {
+                                "value": "tid",
+                                "caption": "Config.prepaymentPaymentReferencePossibleValue-tid"
+                            },
+                            {
+                                "value": "order_no",
+                                "caption": "Config.prepaymentPaymentReferencePossibleValue-order_no"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Config.PayPalTab": {
+            "label": "Config.PayPalTab",
+            "formFields": {
+                "paypal_payment_pending_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.paypalPaymentPendingStatusLabel",
+                    "options": {
+                        "defaultValue": "3"
+                    }
+                }
+            }
+        },
+        "Config.Przelewy24Tab": {
+            "label": "Config.Przelewy24Tab",
+            "formFields": {
+                "przelewy_payment_pending_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.przelewyPaymentPendingStatusLabel",
+                    "options": {
+                        "defaultValue": "3"
+                    }
+                }
+            }
+        },
+        "Config.BarzahlenTab": {
+            "label": "Config.BarzahlenTab",
+            "formFields": {
+                "cashpayment_due_date": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.cashpaymentDueDateLabel",
+                    "options": {}
+                },
+                "cashpayment_callback_order_status": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.cashpaymentCallbackOrderStatusLabel",
+                    "options": {
+                        "defaultValue": "9.5"
+                    }
+                }
+            }
+        },
+        "Config.MerchantScriptManagementTab": {
+            "label": "Config.MerchantScriptManagementTab",
+            "formFields": {
+                "callback_test_mode": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.callbackTestModeLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "enable_email": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.enableEmailLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "email_to": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.emailToLabel",
+                    "options": {}
+                },
+                "email_bcc": {
+                    "type": "inputText",
+                    "required": false,
+                    "label": "Config.emailBccLabel",
+                    "options": {}
+                }
+            }
+        }
     }
-]
+}
