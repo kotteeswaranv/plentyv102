@@ -2,7 +2,7 @@
     "formatVersion": 1,
     "menu": {
         "Config.NovalnetGlobalConfigurationTab": {
-            "label": "Config.GlobalConfigurationTab",
+            "label": "Config.NovalnetGlobalConfigurationTab",
             "formFields": {
                 "payment_active": {
                     "type": "checkBox",
