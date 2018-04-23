@@ -9,7 +9,6 @@
                     "required": false,
                     "label": "Config.paymentActiveLabel",
                     "options": {
-                        "tooltip": "Config.activationKeyTooltip",
                         "defaultValue": false
                     }
                 },
@@ -31,9 +30,7 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.authCodeLabel",
-                    "options": {
-                        "tooltip": "Config.activationKeyTooltip"
-                    }
+                    "options": {}
                 },
                 "product_id": {
                     "type": "inputText",
@@ -91,7 +88,9 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.referrerIdLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.referrerIdTooltip"
+                    }
                 },
                 "reference1": {
                     "type": "inputText",
@@ -260,6 +259,7 @@
                     "required": false,
                     "label": "Config.callbackTestModeLabel",
                     "options": {
+                        "tooltip": "Config.callbackTestModeTooltip",
                         "defaultValue": false
                     }
                 },
@@ -275,13 +275,17 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.emailToLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.emailToTooltip"
+                    }
                 },
                 "email_bcc": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.emailBccLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.emailBccTooltip"
+                    }
                 }
             }
         }
