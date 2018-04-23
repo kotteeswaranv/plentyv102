@@ -154,15 +154,15 @@
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-ref"
+                                "caption": "Config.invoicePaymentReferencePossibleValueRef"
                             },
                             {
                                 "value": "tid",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-tid"
+                                "caption": "Config.invoicePaymentReferencePossibleValueTid"
                             },
                             {
                                 "value": "order_no",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-order_no"
+                                "caption": "Config.invoicePaymentReferencePossibleValueOrderNo"
                             }
                         ]
                     }
@@ -189,15 +189,15 @@
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.prepaymentPaymentReferencePossibleValue-ref"
+                                "caption": "Config.prepaymentPaymentReferencePossibleValueRef"
                             },
                             {
                                 "value": "tid",
-                                "caption": "Config.prepaymentPaymentReferencePossibleValue-tid"
+                                "caption": "Config.prepaymentPaymentReferencePossibleValueTid"
                             },
                             {
                                 "value": "order_no",
-                                "caption": "Config.prepaymentPaymentReferencePossibleValue-order_no"
+                                "caption": "Config.prepaymentPaymentReferencePossibleValueOrderNo"
                             }
                         ]
                     }
