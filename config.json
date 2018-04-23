@@ -9,6 +9,7 @@
                     "required": false,
                     "label": "Config.paymentActiveLabel",
                     "options": {
+                        "tooltip": "Config.activationKeyTooltip",
                         "defaultValue": false
                     }
                 },
