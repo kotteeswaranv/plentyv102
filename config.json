@@ -31,7 +31,9 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.authCodeLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.activationKeyTooltip"
+                    }
                 },
                 "product_id": {
                     "type": "inputText",
