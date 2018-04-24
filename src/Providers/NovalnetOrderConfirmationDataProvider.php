@@ -66,6 +66,8 @@ class NovalnetOrderConfirmationDataProvider
                 }
 
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
+
+            }
         }
     }
 }
