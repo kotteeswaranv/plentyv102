@@ -9,7 +9,6 @@
                     "required": false,
                     "label": "Config.paymentActiveLabel",
                     "options": {
-                        "tooltip": "Config.paymentActiveTooltip",
                         "defaultValue": false
                     }
                 },
@@ -18,7 +17,6 @@
                     "required": false,
                     "label": "Config.testModeLabel",
                     "options": {
-                        "tooltip": "Config.testModeTooltip",
                         "defaultValue": false
                     }
                 },
@@ -136,7 +134,6 @@
                     "required": false,
                     "label": "Config.cc3dLabel",
                     "options": {
-                        "tooltip": "Config.cc3dTooltip",
                         "defaultValue": false
                     }
                 }
@@ -179,7 +176,6 @@
                     "required": false,
                     "label": "Config.invoicePaymentReferenceLabel",
                     "options": {
-                        "tooltip": "Config.invoicePaymentReferenceTooltip",
                         "defaultValue": "all",
                         "checkBoxValues": [
                             {
@@ -215,7 +211,6 @@
                     "required": false,
                     "label": "Config.prepaymentPaymentReferenceLabel",
                     "options": {
-                        "tooltip": "Config.prepaymentPaymentReferenceTooltip",
                         "defaultValue": "all",
                         "checkBoxValues": [
                             {
@@ -290,7 +285,6 @@
                     "required": false,
                     "label": "Config.callbackTestModeLabel",
                     "options": {
-                        "tooltip": "Config.callbackTestModeTooltip",
                         "defaultValue": false
                     }
                 },
@@ -299,7 +293,6 @@
                     "required": false,
                     "label": "Config.enableEmailLabel",
                     "options": {
-                        "tooltip": "Config.enableEmailTooltip",
                         "defaultValue": false
                     }
                 },
