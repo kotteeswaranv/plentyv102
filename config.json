@@ -125,7 +125,7 @@
                     "required": false,
                     "label": "Config.reference2Label",
                     "options": {
-                        "tooltip": "Config.reference2Tooltip"
+                        "tooltip": "Config.reference1Tooltip"
                     }
                 }
             }
