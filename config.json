@@ -9,6 +9,7 @@
                     "required": false,
                     "label": "Config.paymentActiveLabel",
                     "options": {
+                        "tooltip": "Config.paymentActiveTooltip",
                         "defaultValue": false
                     }
                 },
@@ -17,6 +18,7 @@
                     "required": false,
                     "label": "Config.testModeLabel",
                     "options": {
+                        "tooltip": "Config.testModeTooltip",
                         "defaultValue": false
                     }
                 },
@@ -24,55 +26,72 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.vendorIdLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.vendorIdTooltip",
+                    }
                 },
                 "auth_code": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.authCodeLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.authCodeTooltip",
+                    }
                 },
                 "product_id": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.productIdLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.productIdTooltip",
+                    }
                 },
                 "tariff_id": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.tariffIdLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.tariffIdTooltip",
+                    }
                 },
                 "access_key": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.accessKeyLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.accessKeyTooltip",
+                    }
                 },
                 "payment_name": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.paymentNameLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.paymentNameTooltip",
+                    }
                 },
                 "description": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.descriptionLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.descriptionTooltip",
+                    }
                 },
                 "on_hold": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.onHoldLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.onHoldTooltip",
+                    }
                 },
                 "order_completion_status": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.orderCompletionStatusLabel",
                     "options": {
+                        "tooltip": "Config.orderCompletionStatusTooltip",
                         "defaultValue": "7.1"
                     }
                 },
@@ -81,6 +100,7 @@
                     "required": false,
                     "label": "Config.orderCancelStatusLabel",
                     "options": {
+                        "tooltip": "Config.orderCancelStatusTooltip",
                         "defaultValue": "8"
                     }
                 },
@@ -96,13 +116,17 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.reference1Label",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.reference1Tooltip",
+                    }
                 },
                 "reference2": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.reference2Label",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.reference2Tooltip",
+                    }
                 }
             }
         },
@@ -114,6 +138,7 @@
                     "required": false,
                     "label": "Config.cc3dLabel",
                     "options": {
+                        "tooltip": "Config.cc3dTooltip",
                         "defaultValue": false
                     }
                 }
@@ -126,7 +151,9 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.sepaDueDateLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.sepaDueDateTooltip",
+                    }
                 }
             }
         },
@@ -137,13 +164,16 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.invoiceDueDateLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.invoiceDueDateTooltip",
+                    }
                 },
                 "invoice_callback_order_status": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.invoiceCallbackOrderStatusLabel",
                     "options": {
+                        "tooltip": "Config.invoiceCallbackOrderStatusTooltip",
                         "defaultValue": "9.5"
                     }
                 },
@@ -152,6 +182,7 @@
                     "required": false,
                     "label": "Config.invoicePaymentReferenceLabel",
                     "options": {
+                        "tooltip": "Config.invoicePaymentReferenceTooltip",
                         "defaultValue": "all",
                         "checkBoxValues": [
                             {
@@ -179,6 +210,7 @@
                     "required": false,
                     "label": "Config.prepaymentCallbackOrderStatusLabel",
                     "options": {
+                        "tooltip": "Config.invoicePaymentReferenceTooltip",
                         "defaultValue": "9.5"
                     }
                 },
