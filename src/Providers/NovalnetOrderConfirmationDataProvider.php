@@ -47,6 +47,7 @@ class NovalnetOrderConfirmationDataProvider
         {
             if($property->typeId == '3' && $property->value == $paymentMethodId)
             {
+                return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test tt']);
                 $orderId = (int) $order->id;
 
                 $authHelper = pluginApp(AuthHelper::class);
@@ -66,6 +67,8 @@ class NovalnetOrderConfirmationDataProvider
                 }
 
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
+            } else {
+                return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test false tt']);   
             }
         }
     }
