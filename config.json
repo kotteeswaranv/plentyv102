@@ -27,7 +27,7 @@
                     "required": false,
                     "label": "Config.vendorIdLabel",
                     "options": {
-                        "tooltip": "Config.vendorIdTooltip",
+                        "tooltip": "Config.vendorIdTooltip"
                     }
                 },
                 "auth_code": {
@@ -35,7 +35,7 @@
                     "required": false,
                     "label": "Config.authCodeLabel",
                     "options": {
-                        "tooltip": "Config.authCodeTooltip",
+                        "tooltip": "Config.authCodeTooltip"
                     }
                 },
                 "product_id": {
@@ -43,7 +43,7 @@
                     "required": false,
                     "label": "Config.productIdLabel",
                     "options": {
-                        "tooltip": "Config.productIdTooltip",
+                        "tooltip": "Config.productIdTooltip"
                     }
                 },
                 "tariff_id": {
@@ -51,7 +51,7 @@
                     "required": false,
                     "label": "Config.tariffIdLabel",
                     "options": {
-                        "tooltip": "Config.tariffIdTooltip",
+                        "tooltip": "Config.tariffIdTooltip"
                     }
                 },
                 "access_key": {
@@ -59,7 +59,7 @@
                     "required": false,
                     "label": "Config.accessKeyLabel",
                     "options": {
-                        "tooltip": "Config.accessKeyTooltip",
+                        "tooltip": "Config.accessKeyTooltip"
                     }
                 },
                 "payment_name": {
@@ -67,7 +67,7 @@
                     "required": false,
                     "label": "Config.paymentNameLabel",
                     "options": {
-                        "tooltip": "Config.paymentNameTooltip",
+                        "tooltip": "Config.paymentNameTooltip"
                     }
                 },
                 "description": {
@@ -75,7 +75,7 @@
                     "required": false,
                     "label": "Config.descriptionLabel",
                     "options": {
-                        "tooltip": "Config.descriptionTooltip",
+                        "tooltip": "Config.descriptionTooltip"
                     }
                 },
                 "on_hold": {
@@ -83,7 +83,7 @@
                     "required": false,
                     "label": "Config.onHoldLabel",
                     "options": {
-                        "tooltip": "Config.onHoldTooltip",
+                        "tooltip": "Config.onHoldTooltip"
                     }
                 },
                 "order_completion_status": {
@@ -117,7 +117,7 @@
                     "required": false,
                     "label": "Config.reference1Label",
                     "options": {
-                        "tooltip": "Config.reference1Tooltip",
+                        "tooltip": "Config.reference1Tooltip"
                     }
                 },
                 "reference2": {
@@ -125,7 +125,7 @@
                     "required": false,
                     "label": "Config.reference2Label",
                     "options": {
-                        "tooltip": "Config.reference2Tooltip",
+                        "tooltip": "Config.reference2Tooltip"
                     }
                 }
             }
@@ -152,7 +152,7 @@
                     "required": false,
                     "label": "Config.sepaDueDateLabel",
                     "options": {
-                        "tooltip": "Config.sepaDueDateTooltip",
+                        "tooltip": "Config.sepaDueDateTooltip"
                     }
                 }
             }
@@ -165,7 +165,7 @@
                     "required": false,
                     "label": "Config.invoiceDueDateLabel",
                     "options": {
-                        "tooltip": "Config.invoiceDueDateTooltip",
+                        "tooltip": "Config.invoiceDueDateTooltip"
                     }
                 },
                 "invoice_callback_order_status": {
@@ -275,7 +275,7 @@
                     "required": false,
                     "label": "Config.cashpaymentDueDateLabel",
                     "options": {
-                        "tooltip": "Config.cashpaymentDueDateTooltip",
+                        "tooltip": "Config.cashpaymentDueDateTooltip"
                     }
                 },
                 "cashpayment_callback_order_status": {
