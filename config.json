@@ -210,7 +210,7 @@
                     "required": false,
                     "label": "Config.prepaymentCallbackOrderStatusLabel",
                     "options": {
-                        "tooltip": "Config.invoicePaymentReferenceTooltip",
+                        "tooltip": "Config.prepaymentCallbackOrderStatusTooltip",
                         "defaultValue": "9.5"
                     }
                 },
@@ -219,6 +219,7 @@
                     "required": false,
                     "label": "Config.prepaymentPaymentReferenceLabel",
                     "options": {
+                        "tooltip": "Config.prepaymentPaymentReferenceTooltip",
                         "defaultValue": "all",
                         "checkBoxValues": [
                             {
@@ -246,6 +247,7 @@
                     "required": false,
                     "label": "Config.paypalPaymentPendingStatusLabel",
                     "options": {
+                        "tooltip": "Config.paypalPaymentPendingStatusTooltip",
                         "defaultValue": "3"
                     }
                 }
@@ -259,6 +261,7 @@
                     "required": false,
                     "label": "Config.przelewyPaymentPendingStatusLabel",
                     "options": {
+                        "tooltip": "Config.przelewyPaymentPendingStatusTooltip",
                         "defaultValue": "3"
                     }
                 }
@@ -271,13 +274,16 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.cashpaymentDueDateLabel",
-                    "options": {}
+                    "options": {
+                        "tooltip": "Config.cashpaymentDueDateTooltip",
+                    }
                 },
                 "cashpayment_callback_order_status": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.cashpaymentCallbackOrderStatusLabel",
                     "options": {
+                        "tooltip": "Config.cashpaymentCallbackOrderStatusTooltip",
                         "defaultValue": "9.5"
                     }
                 }
@@ -300,6 +306,7 @@
                     "required": false,
                     "label": "Config.enableEmailLabel",
                     "options": {
+                        "tooltip": "Config.enableEmailTooltip",
                         "defaultValue": false
                     }
                 },
