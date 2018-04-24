@@ -64,17 +64,13 @@
                     "type": "inputText",
                     "required": false,
                     "label": "Config.paymentNameLabel",
-                    "options": {
-                        "tooltip": "Config.paymentNameTooltip"
-                    }
+                    "options": {}
                 },
                 "description": {
                     "type": "inputText",
                     "required": false,
                     "label": "Config.descriptionLabel",
-                    "options": {
-                        "tooltip": "Config.descriptionTooltip"
-                    }
+                    "options": {}
                 },
                 "on_hold": {
                     "type": "inputText",
