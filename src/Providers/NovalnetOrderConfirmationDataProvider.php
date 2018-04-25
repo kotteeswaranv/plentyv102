@@ -60,7 +60,7 @@ if($order) {
                             return $commentsObj->listComments();
                         }
                 );
-
+$paymentHelper->testLogTest($orderComments);
                 $comment = '';
                 foreach($orderComments as $data)
                 {
