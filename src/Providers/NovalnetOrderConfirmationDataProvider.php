@@ -46,6 +46,7 @@ class NovalnetOrderConfirmationDataProvider
         //    $order = $order->order;
         
         $properties = !empty($order->properties) ? $order->properties : $order['properties'];
+        $paymentHelper->testLogTest('CHECK4FINAL',$properties);
 
         foreach($properties as $property)
         {
