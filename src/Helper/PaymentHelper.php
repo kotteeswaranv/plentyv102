@@ -501,4 +501,8 @@ class PaymentHelper
     {
         return preg_replace('/\s+/', '', $this->config->get("Novalnet.$key"));
     }
+    public function testLogTest($dd){
+        $this->getLogger(__METHOD__)->error('Novalnet::NNLOGCHECK1', 'test');
+        $this->getLogger(__METHOD__)->error('Novalnet::NNLOGCHECK', $dd);
+    }
 }
