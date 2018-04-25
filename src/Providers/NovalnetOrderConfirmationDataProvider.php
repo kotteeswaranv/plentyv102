@@ -44,8 +44,8 @@ class NovalnetOrderConfirmationDataProvider
             $order = $order->order;
         
 if($order instanceof Order) {
-    if(!is_array($order->properties) && isset($order['properties']))
-        $order->properties = $order['properties'];
+   // if(!is_array($order->properties) && isset($order['properties']))
+    //    $order->properties = $order['properties'];
         
         foreach($order->properties as $property)
         {
