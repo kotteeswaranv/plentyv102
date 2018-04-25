@@ -68,8 +68,12 @@ if($order instanceof Order) {
 
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
 
+            } else {
+             return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test72']);   
             }
         }
-                }
+                } else {
+                return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test76']);      
+}
     }
 }
