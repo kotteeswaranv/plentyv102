@@ -15,6 +15,7 @@
 namespace Novalnet\Providers;
 
 use Plenty\Plugin\Templates\Twig;
+use Plenty\Modules\Order\Models\Order;
 
 use Novalnet\Helper\PaymentHelper;
 use Plenty\Modules\Comment\Contracts\CommentRepositoryContract;
