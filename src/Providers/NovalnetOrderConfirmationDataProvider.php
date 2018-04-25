@@ -41,9 +41,9 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper->testLogTest($args);
         $order = $args[0];
 
-        if(isset($order->order))
-            $order = $order->order;
-
+        //if(isset($order->order))
+         //   $order = $order->order;
+if($order instanceof Order) {
         foreach($order->properties as $property)
         {
             if($property->typeId == '3' && $property->value == $paymentMethodId)
@@ -70,5 +70,6 @@ class NovalnetOrderConfirmationDataProvider
 
             }
         }
+                }
     }
 }
