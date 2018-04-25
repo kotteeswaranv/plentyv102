@@ -38,13 +38,12 @@ class NovalnetOrderConfirmationDataProvider
     public function call(Twig $twig, $args)
     {
         $paymentHelper = pluginApp(PaymentHelper::class);
-        $paymentMethodId = $paymentHelper->getPaymentMethod();
-        $paymentHelper->testLogTest($args);
+        $paymentMethodId = $paymentHelper->getPaymentMethod();        
         $order = $args[0];
-
         //if(isset($order->order))
          //   $order = $order->order;
 if($order instanceof Order) {
+    $paymentHelper->testLogTest($order);
         foreach($order->properties as $property)
         {
             if($property->typeId == '3' && $property->value == $paymentMethodId)
