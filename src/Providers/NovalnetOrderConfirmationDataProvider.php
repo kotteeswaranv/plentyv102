@@ -44,8 +44,10 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper->testLogTest('CHECK3',$order['properties']);
        // if(isset($order->order))
         //    $order = $order->order;
+        
+        $properties = !empty($order->properties) ? $order->properties : $order['properties'];
 
-        foreach($order->properties as $property)
+        foreach($properties as $property)
         {
             if($property->typeId == '3' && $property->value == $paymentMethodId)
             {
