@@ -47,7 +47,7 @@ if($order) {
     $paymentHelper->testLogTest($order);
         foreach($order->properties as $property)
         {
-            //if($property->typeId == '3' && $property->value == $paymentMethodId)
+            if($property->typeId == '3' && $property->value == $paymentMethodId){
           //  if($property->typeId == '3')
         //    {
                 $orderId = (int) $order->id;
@@ -70,6 +70,7 @@ $paymentHelper->testLogTest($orderComments);
                     $comment = 'testcoMMMMM';
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
 
+            }
           //  } else {
           //   return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test72']);   
          //   }
