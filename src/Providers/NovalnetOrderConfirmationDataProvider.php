@@ -51,7 +51,7 @@ class NovalnetOrderConfirmationDataProvider
         foreach($properties as $property)
         {
             $property = (object)$property;
-            $paymentHelper->testLogTest('CHECKTTT','test'); 
+            $paymentHelper->testLogTest('CHECKKKK','test'); 
             $paymentHelper->testLogTest('CHECKOBJ',is_string($property));                 
             $paymentHelper->testLogTest('CHECKOBJVAL',$property->value);                
             $paymentHelper->testLogTest('CHECKOBJTYPE',$property->typeId);
@@ -69,7 +69,9 @@ class NovalnetOrderConfirmationDataProvider
                             return $commentsObj->listComments();
                         }
                 );
-            $paymentHelper->testLogTest('CHECK6CMD',$orderComments);
+                $paymentHelper->testLogTest('CHECK7CMD',$orderId);
+                $paymentHelper->testLogTest('CHECK6CMD',$orderComments);
+            $paymentHelper->testLogTest('CHECK8CMD',$order->id);
                 $comment = '';
                 foreach($orderComments as $data)
                 {
