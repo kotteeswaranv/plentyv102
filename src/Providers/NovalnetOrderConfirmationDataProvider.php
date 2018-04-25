@@ -51,8 +51,8 @@ class NovalnetOrderConfirmationDataProvider
         foreach($properties as $property)
         {
             //if($property->typeId == '3' && $property->value == $paymentMethodId)
-            if($property->typeId == 3)
-            {
+           // if($property->typeId == 3)
+           // {
                 $paymentHelper->testLogTest('CHECK5VAL',$property->value);                
                 $orderId = (int) $order->id;
 
@@ -73,7 +73,7 @@ class NovalnetOrderConfirmationDataProvider
                 }
 
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
-            }
+          //  }
         }
     }
 }
