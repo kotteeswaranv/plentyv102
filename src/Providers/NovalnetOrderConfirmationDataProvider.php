@@ -43,7 +43,6 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper->testLogTest($paymentMethodId);
         //if(isset($order->order))
          //   $order = $order->order;
-        return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'tttttttttt']);
 if($order) {
     $paymentHelper->testLogTest($order);
         foreach($order->properties as $property)
@@ -68,7 +67,7 @@ if($order) {
                     $comment .= (string)$data->text;
                     $comment .= '</br>';
                 }
-
+                    $comment = 'testcoMMMMM';
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
 
             } else {
