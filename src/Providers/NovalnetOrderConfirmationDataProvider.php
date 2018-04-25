@@ -15,7 +15,6 @@
 namespace Novalnet\Providers;
 
 use Plenty\Plugin\Templates\Twig;
-use Plenty\Modules\Order\Models\Order;
 
 use Novalnet\Helper\PaymentHelper;
 use Plenty\Modules\Comment\Contracts\CommentRepositoryContract;
@@ -38,18 +37,16 @@ class NovalnetOrderConfirmationDataProvider
     public function call(Twig $twig, $args)
     {
         $paymentHelper = pluginApp(PaymentHelper::class);
-        $paymentMethodId = $paymentHelper->getPaymentMethod();        
+        $paymentMethodId = $paymentHelper->getPaymentMethod();
         $order = $args[0];
-        if($order->order instanceof Order)
+
+        if(isset($order->order))
             $order = $order->order;
-        
-if($order instanceof Order) {
-    if(empty($order->properties))
-        $order->properties = $order['properties'];
-        
+
         foreach($order->properties as $property)
         {
-            if($property->typeId == '3' && $property->value == $paymentMethodId){
+            if($property->typeId == '3' && $property->value == $paymentMethodId)
+            {
                 $orderId = (int) $order->id;
 
                 $authHelper = pluginApp(AuthHelper::class);
@@ -60,16 +57,16 @@ if($order instanceof Order) {
                             return $commentsObj->listComments();
                         }
                 );
+
                 $comment = '';
                 foreach($orderComments as $data)
                 {
                     $comment .= (string)$data->text;
                     $comment .= '</br>';
                 }
-                return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
 
+                return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
             }
-        }    
-                } 
+        }
     }
 }
