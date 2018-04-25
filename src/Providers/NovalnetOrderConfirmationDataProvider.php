@@ -77,6 +77,7 @@ $paymentHelper->testLogTest($orderComments);
           //   return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test72']);   
          //   }
         }
+    return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'testtest80']);
                 } else {
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test76']);      
 }
