@@ -50,7 +50,7 @@ class NovalnetOrderConfirmationDataProvider
 
         foreach($properties as $property)
         {
-            $paymentHelper->testLogTest('CHECKOBJ',is_array($property));                 
+            $paymentHelper->testLogTest('CHECKOBJ',is_string($property));                 
             $paymentHelper->testLogTest('CHECKOBJVAL',$property->value);                
             $paymentHelper->testLogTest('CHECKOBJTYPE',$property->typeId);
             //if($property->typeId == '3' && $property->value == $paymentMethodId)
