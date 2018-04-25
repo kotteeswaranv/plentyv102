@@ -40,12 +40,12 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper = pluginApp(PaymentHelper::class);
         $paymentMethodId = $paymentHelper->getPaymentMethod();        
         $order = $args[0];
-        if(isset($order->order))
+        if($order->order instanceof Order)
             $order = $order->order;
         
 if($order instanceof Order) {
-   // if(!is_array($order->properties) && isset($order['properties']))
-    //    $order->properties = $order['properties'];
+    if(empty($order->properties))
+        $order->properties = $order['properties'];
         
         foreach($order->properties as $property)
         {
