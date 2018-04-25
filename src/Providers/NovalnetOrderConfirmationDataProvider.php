@@ -40,6 +40,7 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper = pluginApp(PaymentHelper::class);
         $paymentMethodId = $paymentHelper->getPaymentMethod();        
         $order = $args[0];
+        $paymentHelper->testLogTest($paymentMethodId);
         //if(isset($order->order))
          //   $order = $order->order;
 if($order) {
