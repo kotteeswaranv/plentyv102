@@ -39,7 +39,6 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper = pluginApp(PaymentHelper::class);
         $paymentMethodId = $paymentHelper->getPaymentMethod();
         $order = $args[0];
-        $order = (object)$order;
         $paymentHelper->testLogTest('CHECK',$order);
         $paymentHelper->testLogTest('CHECK2',$order->properties);
         $paymentHelper->testLogTest('CHECK3',$order['properties']);
@@ -61,7 +60,8 @@ class NovalnetOrderConfirmationDataProvider
             if($property->typeId == 3)
             {
                 $paymentHelper->testLogTest('CHECK5VAL',$property->value);                
-                $orderId = (int) $order->id;
+                //$orderId = (int) $order->id;
+                $orderId = (int) $property->orderId;
 
                 $authHelper = pluginApp(AuthHelper::class);
                 $orderComments = $authHelper->processUnguarded(
