@@ -47,7 +47,9 @@ if($order) {
     $paymentHelper->testLogTest($order);
         foreach($order->properties as $property)
         {
+            $paymentHelper->testLogTest($property);
             if($property->typeId == '3' && $property->value == $paymentMethodId){
+                $paymentHelper->testLogTest($paymentMethodId);
           //  if($property->typeId == '3')
         //    {
                 $orderId = (int) $order->id;
