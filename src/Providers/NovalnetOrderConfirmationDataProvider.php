@@ -50,8 +50,10 @@ class NovalnetOrderConfirmationDataProvider
 
         foreach($properties as $property)
         {
-            if($property->typeId == '3' && $property->value == $paymentMethodId)
+            //if($property->typeId == '3' && $property->value == $paymentMethodId)
+            if($property->typeId == '3')
             {
+                $paymentHelper->testLogTest('CHECK5VAL',$property->value);                
                 $orderId = (int) $order->id;
 
                 $authHelper = pluginApp(AuthHelper::class);
