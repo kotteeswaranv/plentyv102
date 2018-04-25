@@ -43,7 +43,8 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper->testLogTest($paymentMethodId);
         //if(isset($order->order))
          //   $order = $order->order;
-if($order && is_array($order->properties)) {
+        $paymentHelper->testLogTest($order->properties);
+if($order) {
     $paymentHelper->testLogTest($order);
         foreach($order->properties as $property)
         {
