@@ -48,8 +48,8 @@ if($order) {
         foreach($order->properties as $property)
         {
             //if($property->typeId == '3' && $property->value == $paymentMethodId)
-            if($property->typeId == '3')
-            {
+          //  if($property->typeId == '3')
+        //    {
                 $orderId = (int) $order->id;
 
                 $authHelper = pluginApp(AuthHelper::class);
@@ -70,9 +70,9 @@ $paymentHelper->testLogTest($orderComments);
                     $comment = 'testcoMMMMM';
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
 
-            } else {
-             return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test72']);   
-            }
+          //  } else {
+          //   return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test72']);   
+         //   }
         }
                 } else {
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test76']);      
