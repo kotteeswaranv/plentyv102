@@ -40,20 +40,16 @@ class NovalnetOrderConfirmationDataProvider
         $paymentHelper = pluginApp(PaymentHelper::class);
         $paymentMethodId = $paymentHelper->getPaymentMethod();        
         $order = $args[0];
-        $paymentHelper->testLogTest($paymentMethodId);
-        //if(isset($order->order))
-         //   $order = $order->order;
-        $paymentHelper->testLogTest($order->properties);
-        $paymentHelper->testLogTest($order['properties']);
-if($order) {
-    $paymentHelper->testLogTest($order);
+        if(isset($order->order))
+            $order = $order->order;
+        
+if($order instanceof Order) {
+    if(!is_array($order->properties) && isset($order['properties']))
+        $order->properties = $order['properties'];
+        
         foreach($order->properties as $property)
         {
-            $paymentHelper->testLogTest($property);
             if($property->typeId == '3' && $property->value == $paymentMethodId){
-                $paymentHelper->testLogTest($paymentMethodId);
-          //  if($property->typeId == '3')
-        //    {
                 $orderId = (int) $order->id;
 
                 $authHelper = pluginApp(AuthHelper::class);
@@ -64,24 +60,16 @@ if($order) {
                             return $commentsObj->listComments();
                         }
                 );
-$paymentHelper->testLogTest($orderComments);
                 $comment = '';
                 foreach($orderComments as $data)
                 {
                     $comment .= (string)$data->text;
                     $comment .= '</br>';
                 }
-                    $comment = 'testcoMMMMM';
                 return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => html_entity_decode($comment)]);
 
             }
-          //  } else {
-          //   return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test72']);   
-         //   }
-        }
-    return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'testtest80']);
-                } else {
-                return $twig->render('Novalnet::NovalnetOrderHistory', ['comments' => 'test76']);      
-}
+        }    
+                } 
     }
 }
