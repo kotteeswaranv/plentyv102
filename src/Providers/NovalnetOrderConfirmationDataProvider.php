@@ -42,7 +42,7 @@ class NovalnetOrderConfirmationDataProvider
         $order = $args[0];
         //if(isset($order->order))
          //   $order = $order->order;
-if($order instanceof Order) {
+if($order) {
     $paymentHelper->testLogTest($order);
         foreach($order->properties as $property)
         {
