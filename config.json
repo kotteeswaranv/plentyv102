@@ -17,8 +17,7 @@
                     "required": false,
                     "label": "Config.testModeLabel",
                     "options": {
-                        "defaultValue": false,
-                        "tooltip": "Config.vendorIdTooltip"
+                        "defaultValue": false
                     }
                 },
                 "vendor_id": {
